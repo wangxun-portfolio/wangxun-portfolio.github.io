@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CBA绿色贷款数据分析课程项目 Case Study。" />
+    <title>CBA绿色贷款｜数据分析课程项目 — 王洵</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20260921-cba" />
+    <script src="site-config.js" defer></script>
+    <script src="script.js?v=20260921-cba" defer></script>
+  </head>
+  <body class="case-page case-page--cba">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span>王洵</span><span class="brand__latin">Wang Xun</span></a>
+      <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" data-nav data-open="false" aria-label="主要导航">
+        <a href="index.html#selected-work">All Work</a>
+        <a href="index.html#about">About</a>
+        <a href="resume/Wang_Xun_Resume_CN.pdf" data-resume>Resume ↗</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header class="case-hero section-shell">
+        <div class="case-hero__title" data-reveal>
+          <p class="eyebrow">Case Study · 04</p>
+          <h1><span>CBA绿色贷款</span><em>数据分析课程项目</em></h1>
+          <p class="case-hero__summary">CBA 即 Commonwealth Bank of Australia（澳大利亚联邦银行）。本项目是墨尔本大学 MGMT90280 Managerial Decision Analytics 课程小组作业，以 CBA 绿色贷款为研究对象，结合描述性、预测性与处方性分析，比较不同贷款类别的回报、碳排放数据与资源配置结果。</p>
+        </div>
+        <dl class="case-meta" data-reveal>
+          <div><dt>Project</dt><dd>课程小组作业</dd></div>
+          <div><dt>Role</dt><dd>小组负责人｜预测与回归分析</dd></div>
+          <div><dt>Period</dt><dd>2025</dd></div>
+          <div><dt>Course / Tools</dt><dd>MGMT90280｜Excel</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-section case-section--role section-shell" data-reveal>
+        <div class="case-section__number" aria-hidden="true">01</div>
+        <div class="case-section__heading"><h2>项目概览</h2></div>
+        <div class="case-section__body prose">
+          <p>本项目以澳大利亚联邦银行（CBA）的绿色贷款为研究对象，将其分为 Retail、Business 和 Institutional 三类。基于 CBA 报告数据及作业中的估算数据，分析 2022 H1—2024 H2 的回报与碳排放，比较预测方法，并完成给定约束下的投资组合配置。</p>
+        </div>
+      </section>
+
+      <section class="case-section case-section--work section-shell" data-reveal>
+        <div class="case-section__number" aria-hidden="true">02</div>
+        <div class="case-section__heading"><h2>我的工作</h2></div>
+        <div class="case-section__body">
+          <p class="heart-ownership-note">项目由小组共同完成。我担任小组负责人，主要负责回归与预测分析，并协调成员分工和项目进度。Predictive Analysis 由我与一名组员共同完成。</p>
+          <ul class="case-responsibilities heart-responsibilities">
+            <li><strong>项目协调：</strong> 协调成员分工、项目进度及不同分析模块之间的衔接。</li>
+            <li><strong>预测分析：</strong> 参与 Predictive Analysis，比较指数平滑与2期、3期移动平均的误差表现。</li>
+            <li><strong>回归分析：</strong> 使用 Excel 检查三类贷款的回归结果，包括 R Square、Adjusted R Square、ANOVA、Significance F 与系数 P-value。</li>
+            <li><strong>结果整理：</strong> 参与分析结果和最终报告的整理。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section section-shell" data-reveal>
+        <div class="case-section__number" aria-hidden="true">03</div>
+        <div class="case-section__heading"><h2>分析方法</h2></div>
+        <div class="case-section__body">
+          <ol class="cba-methods">
+            <li><span>01</span><div><h3>数据整理与分组</h3><p>团队按 Retail、Business 与 Institutional 整理贷款回报和碳排放数据，并将年度信息拆分为 2022 H1—2024 H2 的半年度估计序列。</p></div></li>
+            <li><span>02</span><div><h3>描述性分析</h3><p>团队以模拟客户数据进行 K-means 聚类，分别描述零售与非零售客户的风险、收入及地区或行业特征。</p></div></li>
+            <li><span>03</span><div><h3>时间序列预测</h3><p>预测部分比较指数平滑（α=1）与移动平均（k=2、k=3），使用 MAE、MSE 和 MAPE 评估误差。</p></div></li>
+            <li><span>04</span><div><h3>回归分析</h3><p>以贷款回报金额为因变量、碳排放数据为自变量，在 95% 置信水平下分别检查三类贷款的线性关系。</p></div></li>
+            <li><span>05</span><div><h3>投资组合优化</h3><p>团队使用 Markowitz 均值—方差模型和 Excel Solver，在投资比例非负、合计为 1 且预期回报不低于 10% 的约束下最小化组合方差。</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section case-section--cba-results section-shell" data-reveal>
+        <div class="case-section__number" aria-hidden="true">04</div>
+        <div class="case-section__heading"><h2>数据结果</h2></div>
+        <div class="case-section__body">
+          <div class="cba-chart-grid">
+            <figure class="cba-chart">
+              <figcaption><h3>三类绿色贷款回报金额</h3><p>2022 H1—2024 H2，单位：千澳元</p></figcaption>
+              <img src="assets/projects/cba/charts/return-trend.svg" alt="Retail、Business 和 Institutional 三类绿色贷款在 2022 H1 至 2024 H2 的估计回报金额趋势" loading="lazy" />
+              <p class="cba-chart__note">三类估计回报金额均随时间上升，Retail 与 Business 的规模高于 Institutional。</p>
+              <small>数据来源：分析工作簿「碳排放量+回报金额」A12:D18。作业根据公开信息与假设形成半年度估计值。</small>
+            </figure>
+            <figure class="cba-chart">
+              <figcaption><h3>与绿色贷款组合相关的碳排放数据</h3><p>2022 H1—2024 H2，单位：10³ 吨 CO₂-e</p></figcaption>
+              <img src="assets/projects/cba/charts/carbon-trend.svg" alt="Retail、Business 和 Institutional 三类绿色贷款在 2022 H1 至 2024 H2 的碳排放数据趋势" loading="lazy" />
+              <p class="cba-chart__note">三类序列在样本期内总体下降。</p>
+              <small>数据来源：分析工作簿「碳排放量+回报金额」A2:D8。</small>
+            </figure>
+            <figure class="cba-chart cba-chart--wide">
+              <figcaption><h3>回报金额预测方法的 MAPE 比较</h3><p>指数平滑与 2 期、3 期移动平均，单位：%</p></figcaption>
+              <img src="assets/projects/cba/charts/return-forecast-mape.svg" alt="三类绿色贷款回报金额预测中，指数平滑、2期移动平均和3期移动平均的 MAPE 比较" loading="lazy" />
+              <p class="cba-chart__note">在三类贷款的回报金额预测中，指数平滑（α=1）的 MAPE 均低于两种移动平均。作业也以 MAE 与 MSE 作同类比较。</p>
+              <small>数据来源：分析工作簿「碳排放量+回报金额」A27:D40。</small>
+            </figure>
+          </div>
+
+          <section class="cba-regression" aria-labelledby="regression-title">
+            <header><h3 id="regression-title">回归结果</h3><p>Y 为对应类别的回报金额（千澳元），X 为对应类别的碳排放数据（10³ 吨 CO₂-e）；样本期为 2022 H1—2024 H2，共 6 个观测值。</p></header>
+            <div class="cba-regression__rows">
+              <article><h4>Retail</h4><p class="cba-equation">Ŷ = 304,882.58 − 132.623X</p><dl><div><dt>R²</dt><dd>0.9135</dd></div><div><dt>Adjusted R²</dt><dd>0.8918</dd></div><div><dt>Coefficient p-value</dt><dd>0.0029</dd></div></dl></article>
+              <article><h4>Business</h4><p class="cba-equation">Ŷ = 388,958.95 − 134.690X</p><dl><div><dt>R²</dt><dd>0.9378</dd></div><div><dt>Adjusted R²</dt><dd>0.9223</dd></div><div><dt>Coefficient p-value</dt><dd>0.0015</dd></div></dl></article>
+              <article><h4>Institutional</h4><p class="cba-equation">Ŷ = 101,120.24 − 30.953X</p><dl><div><dt>R²</dt><dd>0.7848</dd></div><div><dt>Adjusted R²</dt><dd>0.7310</dd></div><div><dt>Coefficient p-value</dt><dd>0.0188</dd></div></dl></article>
+            </div>
+            <p class="cba-regression__note">三组回归的系数均为负，且系数 P-value 均小于0.05。</p>
+            <small>来源：分析工作簿「碳排放量+回报金额」G3:O62。</small>
+          </section>
+
+          <div class="cba-download">
+            <div><strong>分析工作簿</strong><span>Excel workbook · For reference</span></div>
+            <a class="text-link text-link--primary" href="downloads/CBA-green-loan-analysis.xlsx" download="CBA-green-loan-analysis.xlsx">DOWNLOAD ANALYSIS WORKBOOK ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section-shell" data-reveal>
+        <div class="case-section__number" aria-hidden="true">05</div>
+        <div class="case-section__heading"><h2>主要结论</h2></div>
+        <div class="case-section__body">
+          <ul class="case-responsibilities cba-findings">
+            <li><strong>预测方法：</strong> 作业比较结果显示，指数平滑（α=1）在回报金额与碳排放序列中的 MAE、MSE 和 MAPE 均低于 2 期与 3 期移动平均。</li>
+            <li><strong>回归关系：</strong> 三类贷款的回报金额与碳排放数据在 6 个半年度观测值中呈负向线性关系。</li>
+            <li><strong>组合优化：</strong> 在作业的估计数据与约束下，Markowitz 模型给出的配置为 Retail 68.3%、Institutional 31.7%、Business 0%，预期回报为 10%，组合方差为 0.0000915。</li>
+            <li><strong>分析限制：</strong> 部分数据来自估计或模拟，时间序列和回归样本仅覆盖 2022 H1—2024 H2；线性回归与均值—方差模型也依赖线性、正态分布及相关性稳定等假设。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-gallery case-gallery--cba section-shell" aria-labelledby="cba-assignment-title">
+        <header class="case-section case-section--gallery-heading" data-reveal>
+          <div class="case-section__number" aria-hidden="true">06</div>
+          <div class="case-section__heading"><h2 id="cba-assignment-title">课程作业</h2></div>
+          <div class="case-section__body prose case-section__intro">
+            <p>以下按原文件顺序展示课程作业全部 49 页。公开展示副本已隐去其他组员姓名；点击缩略图可查看高清页面。</p>
+          </div>
+        </header>
+
+        <section class="document-set" aria-labelledby="assignment-pages-title" data-reveal>
+          <header class="document-set__header"><h3 id="assignment-pages-title">课程作业 · 49页</h3></header>
+          <div class="document-gallery document-gallery--portrait" data-document-gallery data-document-count="49" data-document-dir="assets/projects/cba/assignment" data-document-prefix="page" data-document-label="CBA课程作业" data-lightbox-group="cba-assignment"></div>
+        </section>
+      </section>
+
+      <nav class="case-navigation section-shell" aria-label="项目导航" data-reveal>
+        <a href="index.html#selected-work"><span>Back</span><strong>← 返回全部作品</strong></a>
+        <a href="case-heart-deer.html"><span>Previous case</span><strong>心“鹿”绘本｜本科大创项目</strong></a>
+      </nav>
+    </main>
+
+    <footer class="site-footer section-shell"><span>Wang Xun Portfolio</span><a href="resume/Wang_Xun_Resume_CN.pdf" data-resume>Resume ↗</a><span>© <span data-year></span></span></footer>
+
+    <dialog class="lightbox lightbox--contain" data-lightbox aria-labelledby="lightbox-title">
+      <div class="lightbox__header">
+        <h2 id="lightbox-title" data-lightbox-title>课程作业页面</h2>
+        <div class="lightbox__controls">
+          <button type="button" data-lightbox-prev aria-label="查看上一页">← Prev</button>
+          <button type="button" data-lightbox-next aria-label="查看下一页">Next →</button>
+          <button type="button" data-lightbox-close aria-label="关闭课程作业页面">Close ×</button>
+        </div>
+      </div>
+      <div class="lightbox__body"><img data-lightbox-image src="" alt="" /></div>
+    </dialog>
+  </body>
+</html>
