@@ -7,7 +7,7 @@ if (document.body.classList.contains("case-page") && !window.location.hash) {
 document.querySelectorAll("[data-resume]").forEach((link) => {
   link.href = config.resumePath || "resume/Wang_Xun_Resume_CN.pdf";
   link.target = "_blank";
-  link.rel = "noreferrer";
+  link.rel = "noopener noreferrer";
 });
 
 document.querySelectorAll("[data-resume-download]").forEach((link) => {
