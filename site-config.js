@@ -1,5 +1,5 @@
 window.PORTFOLIO_CONFIG = Object.freeze({
-  resumePath: "resume/Wang_Xun_Resume_CN.pdf",
+  resumePath: "resume/Wang_Xun_Resume_CN.pdf?v=20260923",
   routes: Object.freeze({
     tanwan: "case-tanwan.html",
     yy: "case-baidu-yy.html",

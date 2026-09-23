@@ -5,13 +5,13 @@ if (document.body.classList.contains("case-page") && !window.location.hash) {
 }
 
 document.querySelectorAll("[data-resume]").forEach((link) => {
-  link.href = config.resumePath || "resume/Wang_Xun_Resume_CN.pdf";
+  link.href = config.resumePath || "resume/Wang_Xun_Resume_CN.pdf?v=20260923";
   link.target = "_blank";
   link.rel = "noopener noreferrer";
 });
 
 document.querySelectorAll("[data-resume-download]").forEach((link) => {
-  link.href = config.resumePath || "resume/Wang_Xun_Resume_CN.pdf";
+  link.href = config.resumePath || "resume/Wang_Xun_Resume_CN.pdf?v=20260923";
   link.setAttribute("download", "Wang_Xun_Resume_CN.pdf");
 });
 
